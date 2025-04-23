@@ -1,0 +1,26 @@
+@import './responsive'; 
+
+.layout {
+  background-color: pink;
+  height: 100vh;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include lg {
+    background-color: red;  // (min 1024)
+    max-width: 1280px;  // to have a lil space between vp and edge
+  }
+
+  @include md {
+    background-color: yellow;
+    max-width: 768px;
+  }
+
+  @include sm {
+    background-color: green;
+    max-width: 640px;
+  }
+}

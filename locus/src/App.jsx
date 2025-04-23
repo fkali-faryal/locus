@@ -1,6 +1,13 @@
+import Nav from "./components/Nav/Nav"
+import "./layout.scss"
+
 function App() {
   return (
-    <div>Hello World</div>
+
+    
+    <div className="layout">  
+      <Nav />
+    </div>
   )
 }
 
